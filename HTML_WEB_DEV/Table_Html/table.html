@@ -1,35 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>Salary</th>
-            </tr>
-        </thead>
+  </head>
+  <body>
+    <!--
+        OLD / OBSOLETE HTML SYNTAX:
+        <table border="1">
 
-        <tbody>
-            <tr>
-                <td>Meet</td>
-                <td>21</td>
-                <td>00000</td>
-            </tr>
-            <tr>
-                <td>Ronaldo</td>
-                <td>41</td>
-                <td rowspan="2">infinite</td>
-            </tr>
-            <tr>
-                <td colspan="2">Nobody</td>
-            </tr>
-        </tbody>
+        The "border" attribute was used to add borders directly to a table
+        using HTML.
+
+        DO NOT use it in modern HTML.
+
+        Modern approach:
+        - Keep HTML responsible for structure.
+        - Use CSS to style the table and add borders.
+
+        Example CSS:
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Meet</td>
+          <td>21</td>
+          <td>00000</td>
+        </tr>
+        <tr>
+          <td>Ronaldo</td>
+          <td>41</td>
+          <td rowspan="2">infinite</td>
+        </tr>
+        <tr>
+          <td colspan="2">Nobody</td>
+        </tr>
+      </tbody>
     </table>
-</body>
+  </body>
 </html>

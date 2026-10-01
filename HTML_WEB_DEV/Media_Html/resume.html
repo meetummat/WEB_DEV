@@ -23,7 +23,24 @@
     <main>
       <h2>About me:</h2>
       <img src="./thumb-1920-929995.jpg" alt="" height="300" align="left" />
-      <!-- align="left" to make the text appear in the top with the image. -->
+      <!--
+          OLD / OBSOLETE HTML ATTRIBUTE:
+
+          align="left"
+
+          Older HTML allowed attributes such as align="left" to control
+          the positioning of elements.
+
+          DO NOT use align for layout in modern HTML.
+
+          Modern approach:
+          Use CSS for positioning, alignment, spacing, and layout.
+
+          Example:
+          img {
+              float: left;
+          }
+      -->
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur non
         dolorum rem aspernatur minima quasi labore eum odit aut ratione qui
@@ -32,8 +49,37 @@
         voluptatibus!
       </p>
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <!--
+          OLD / OBSOLETE TABLE PRESENTATION ATTRIBUTES:
 
-      <h2>Eduction</h2>
+          <table border="1" cellpadding="10">
+
+          - border="1" → old way of adding a table border
+          - cellpadding="10" → old way of adding space inside table cells
+          
+          DO NOT use these attributes in modern HTML.
+          
+          Modern HTML:
+          <table>
+
+          Modern CSS will control:
+          - borders → border
+          - cell spacing/padding → padding
+
+          Example CSS:
+          table,
+          th,
+          td {
+              border: 1px solid black;
+          }
+
+          th,
+          td {
+              padding: 10px;
+          }
+      -->         
+
+      <h2>Education</h2>
       <table border="1" cellpadding="10">
         <!-- to make space between elements -->
         <thead>
