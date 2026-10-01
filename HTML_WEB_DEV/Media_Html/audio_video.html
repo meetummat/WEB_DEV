@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- How to attach audio file in out website -->
+    <!-- <audio src="./movie theatre .mp3" controls></audio>
+    <br><br> -->
+
+    <!-- Another way to attach audio file.-->
+    <!-- Advantages of this method -->
+    <audio controls>
+      <source src="./movie theatre .mp3" type="audio/mp3" />
+      <!-- The browser checks the <source> elements in order and uses the first source it can play. -->
+      <source />
+      <!--  We can provide multiple sources as fallbacks in case the browser cannot play one of them. -->
+      Songs are not loaded
+      <!-- if all the files did not load then it will display songs are not loaded-->
+    </audio>
+    <br /><br />
+
+    <!-- How to attach video file in our website -->
+    <!-- <video src="./Ronaldo.mp4" height="500" controls></video> -->
+
+    <!-- Another way to use it like the audio -->
+    <video controls height="500" autoplay muted>
+      <source src="./Ronaldo.mp4" type="video/mp4" />
+      <!-- type tells the browser the format of the video file. -->
+      Video is not loaded
+    </video>
+
+    <!-- How to attach youtube video in out website -->
+    <!-- iframe -->
+    <iframe
+      src="https://www.youtube.com/embed/RqgkorVrR1w?si=8z_Kf5Fb7DE6PACX"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <!-- https://www.youtube.com/embed/videoid  this is format to use youtube video in our website-->
+
+    <!-- to include other html file in this file we can do that with iframe -->
+    <!-- Not all website allow us to use their site in our site -->
+    <iframe src="../Forms_Html/form2.html" frameborder="0"></iframe>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="6">Time Table</th>
+            </tr>
+            <!-- <tr>
+                <th rowspan="6">Hours</th> if this will be written here then rowspan="6" of hours will not work because it is in <thead> so we have to put it in <tbody>
+                <th>Mon</th>               it can only expand through table head, can not go in table body.
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr> -->
+        </thead>
+
+        <tbody>
+            <!-- <tr>
+                <th rowspan="6">Hours</th> this is not a good habit to use <th> in body of table.
+                <th>Mon</th>               we can convery them into bold through css.
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr> -->
+            <tr>
+                <td rowspan="6">Hours</td>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thu</td>
+                <td>Fri</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <td colspan="5">LUNCH</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+                <td rowspan="2" colspan="2">Project</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

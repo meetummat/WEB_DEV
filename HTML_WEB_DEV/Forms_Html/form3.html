@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>User Registration</h1>
+    <form action="">
+      <label for="name">Username : </label>
+      <input type="text" id="name" name="username" />
+      <br /><br />
+
+      <label for="email">Email : </label>
+      <input type="email" id="email" name="useremail" />
+      <br /><br />
+
+      <label for="pass">Password</label>
+      <input type="password" id="pass" name="userpass" />
+      <br /><br />
+
+      <!-- radio button -->
+      <!-- we have to give same name to all radio buttons otherwise it will allow user to select more than one radio button which we do not want -->
+      <label> Gender : </label>
+      <input type="radio" id="male" name="usergender" value="Male"/> <!-- we have to use value attribute with name in radio button to send the value in the backend corresponds to that name attribute, if we dont mention value then it will send "on" in the backend if we click and "off" if we dont click-->
+      <label for="male">Male </label>
+      <input type="radio" id="female" name="usergender" value="Female"/>
+      <label for="female">Female </label>
+      <input type="radio" id="other" name="usergender" value="Other"/>
+      <label for="other">Other</label>
+      <br /><br />
+
+      <input type="checkbox" id="check" name="usercheck" />
+      <label for="check">I agree to the terms and condition</label>
+      <br /><br />
+
+      <button>Register</button>
+    </form>
+  </body>
+</html>

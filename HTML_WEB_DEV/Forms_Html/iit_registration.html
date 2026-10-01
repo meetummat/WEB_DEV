@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>IT JEE Registration Form</legend>
+
+        <label for="name">Full Name : </label>
+        <input type="text" id="name" name="username" />
+        <br /><br />
+
+        <label for="email">Email : </label>
+        <input type="email" id="email" name="useremail" />
+        <br /><br />
+
+        <label for="phone">Phone : </label>
+        <input type="tel" id="phone" name="userphone" />
+        <br /><br />
+
+        <label for="pass">Password : </label>
+        <input type="password" id="pass" name="userpass" />
+        <br /><br />
+
+        <label>Gender : </label>
+        <input type="radio" id="male" name="usergender" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="usergender" value="Female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="usergender" value="Other" />
+        <label for="other">Other</label>
+        <br /><br />
+
+        <label for="dob">Date of Birth : </label>
+        <input
+          type="date"
+          id="dob"
+          name="userdob"
+          min="2001-01-01"
+          max="2005-12-31"
+        />
+        <br /><br />
+
+        <label for="shname">School Name : </label>
+        <input type="text" id="shname" name="usershname" />
+        <br /><br />
+
+        <label for="board">Board : </label>
+        <select name="userboard" id="board">
+          <option value="" disabled selected>Select your board</option>
+          <option value="CBSE">CBSE</option>
+          <option value="RBSE">RBSE</option>
+          <option value="ICSE">ICSE</option>
+          <option value="PBSE">PBSE</option>
+        </select>
+        <br /><br />
+
+        <!-- only to pass in 2023, 2024 and 2025-->
+        <label for="year">Year of Passing : </label>
+        <input type="number" id="year" name="useryear" min="2023" max="2025" />
+        <br /><br />
+
+        <label for="center">Exam Center : </label>
+        <select name="usercenter" id="center">
+          <option value="" disabled selected>Select Center</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Rahasthan">Rahasthan</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Mumbai">Mumbai</option>
+        </select>
+        <br /><br />
+
+        <button>Register</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
